@@ -1,0 +1,5 @@
+<resources>
+    <color name="primary_blue">#00BCD4</color> <!-- Azul cyan de los botones -->
+    <color name="text_dark">#212121</color>
+    <color name="text_subtitle">#757575</color>
+</resources>

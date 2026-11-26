@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Logo / Icono superior -->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_button_solid"
+        android:contentDescription="Logo Safe QR"
+        android:padding="16px"
+        android:src="@android:drawable/ic_menu_agenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/white" />
+
+    <!-- Título SAFE QR -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SAFE QR"
+        android:textColor="#555555"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgLogo" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:text="Un QR puede marcar\nla diferencia"
+        android:textColor="@color/text_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <!-- Botón 1: Mi perfil medico -->
+    <Button
+        android:id="@+id/btnMedicalProfile"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_button_solid"
+        android:text="Mi perfil medico"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubtitle" />
+
+    <!-- Botón 2: Perfil Infantil -->
+    <Button
+        android:id="@+id/btnChildProfile"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Perfil Infantil"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMedicalProfile" />
+
+    <!-- Botón 3: Mi codigo QR -->
+    <Button
+        android:id="@+id/btnMyQr"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Mi codigo QR"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChildProfile" />
+
+    <!-- Botón 4: Leer codigo QR -->
+    <Button
+        android:id="@+id/btnScanQr"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_button_outline"
+        android:text="Leer codigo QR"
+        android:textAllCaps="false"
+        android:textColor="@color/text_dark"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnMyQr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
